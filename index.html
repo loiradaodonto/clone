@@ -19,9 +19,49 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- [END] CSS -->
     </head>
-    
+    <style>
+	           nav {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform: scaleX(0);
+    background: #333;
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+    </style>
     <body>
-        
+        <div>
+        <nav>
+            <a href="https://loiradaodonto.github.io/clone/">PedAjuda</a>
+            <a href="https://loiradaodonto.github.io/receitas/">Receitas</a>
+            <a href="https://loiradaodonto.github.io/dengue/">Calculadora Dengue</a>
+            <a href="#">ECG</a>
+            
+        </nav>
+    </div>
         
         
         <!-- ***** Preloader Start ***** -->
